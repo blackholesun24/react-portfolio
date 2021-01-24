@@ -24,7 +24,7 @@ export default function Project(){
                     {projectData && projectData.map((project, index) => (
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
                             <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
-                                <a href={project.link} alt={project.title} target="_blank" rel="noopener norefferer">{projectData.title}</a>
+                                <a href={project.link} alt={project.title} target="_blank" rel="noreferrer">{projectData.title}</a>
                             </h3>
                             <div className="text-gray-500 text-xs space-x-4">
                                 <span>
@@ -42,7 +42,7 @@ export default function Project(){
                                 <p className="my-6 text-lg text-gray-700 leading-relaxed">
                                     {project.description}
                                 </p>
-                                <a href={project.link} target="_blank" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
+                                <a href={project.link} target="_blank" rel="noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
                                      Voir le projet{" "}
                                     <span role="img" aria-label="right pointer">&#9658;</span>
                                 </a>
